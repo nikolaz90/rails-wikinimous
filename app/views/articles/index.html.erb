@@ -1,0 +1,16 @@
+<section>
+  <h1>Welcome to the wiki</h1>
+  <ul>
+    <% @articles.each do |item| %>
+    <article>
+      <div>
+        <p><strong><%= item.title %></strong></p>
+        <p><%= item.content %></p>
+      </div>
+      <%= link_to 'edit', edit_article_path(item)%>
+      <%= link_to 'delete', article_path(item), data: {turbo_method: :delete}%>
+    </article>
+
+    <% end %>
+  </ul>
+</section>
