@@ -1,0 +1,46 @@
+.articles-container-list {
+  padding: 0;
+}
+
+.articles-container-list article {
+  margin-top: 1rem;
+  border-top: 1px black solid;
+}
+
+.articles-container-list article:first-child {
+  border-top: none;
+}
+
+.articles-container-list div a {
+  color: rgb(99, 99, 99);
+}
+
+.articles-container-list div a:after {
+  content: '';
+  color: rgb(160, 160, 160);
+  font-size: 0.8rem;
+}
+
+.articles-container-list div a:hover:after {
+  content: 'read article';
+  margin-left: 2rem;
+}
+
+.articles-container-list div p {
+  text-overflow: ellipsis;
+}
+
+.articles-container-list p {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.articles-container-list article > a {
+  color: rgb(160, 160, 160);
+  margin-right: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.articles-container-list article > a:hover {
+  color: rgb(99, 99, 99);
+}

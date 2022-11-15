@@ -1,8 +1,7 @@
-<h3>article: </h3>
-<%= form_with(model: @article) do |form| %>
+<%= form_with(model: @article, class: 'article-form') do |form| %>
   <%= form.label :title %>
-  <%= form.text_field :title %>
+  <%= form.text_field :title, required: true %>
   <%= form.label :content %>
-  <%= form.text_area :content, size: "70x5" %>
+  <%= form.text_area :content, size: "70x5", required: true %>
   <%= form.submit %>
 <% end %>

@@ -1,10 +1,10 @@
 <section>
   <h1>Welcome to the wiki</h1>
-  <ul>
+  <ul class="articles-container-list">
     <% @articles.each do |item| %>
     <article>
       <div>
-        <p><strong><%= item.title %></strong></p>
+        <p><strong><%= link_to item.title, article_path(item) %></strong></p>
         <p><%= item.content %></p>
       </div>
       <%= link_to 'edit', edit_article_path(item)%>

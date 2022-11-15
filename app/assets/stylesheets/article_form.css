@@ -1,0 +1,40 @@
+.article-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.article-form label {
+  margin: 1rem 0;
+}
+
+.article-form input[type='submit']{
+  margin-top: 1rem;
+  background-color: rgb(237, 237, 237);;
+  border: none;
+  height: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out 0.3s;
+}
+
+.article-form input[type='text'], textarea {
+  min-height: 2rem;
+  background-color: rgb(237, 237, 237);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.article-form input[type='text']:hover, textarea:hover {
+  box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.article-form input[type='text']:focus, textarea:focus {
+  background-color: rgb(232, 243, 223);
+  outline: none;
+}
+
+.article-form input[type='submit']:hover{
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.all.shuffle
   end
 
   def new
@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-
+    @article = Article.find(params[:id])
   end
 
   def update
